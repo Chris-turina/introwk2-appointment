@@ -15,5 +15,10 @@ $(document).ready(function() {
    $(".appdate").text(appDate);
    $(".appstarttime").text(appStartTime);
    $(".appendtime").text(appEndTime);
+
+   $(".toggle").show();
+   $("#appointments").hide();
+
+
   });
 });

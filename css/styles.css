@@ -1,0 +1,23 @@
+.toggle {
+  display: none;
+}
+
+.fullname {
+  font-weight: bold;
+}
+
+.appdescription {
+  font-weight: bold;
+}
+
+.appdate {
+  font-weight: bold;
+}
+
+.appstarttime {
+  font-weight: bold;
+}
+
+.appendtime {
+  font-weight: bold;
+}
