@@ -16,8 +16,20 @@ $(document).ready(function() {
    $(".appstarttime").text(appStartTime);
    $(".appendtime").text(appEndTime);
 
-   $(".toggle").show();
+
    $("#appointments").hide();
+   $("#title").hide();
+   $(".toggle").show();
+   $("#hideable").hide();
+
+   var symptoms = $("#symptoms").val();
+   $("#show-symptoms").show();
+
+   var flavor = $("input:radio[name=flavor]:checked").val();
+
+   $(".radio").show();
+
+
 
 
   });

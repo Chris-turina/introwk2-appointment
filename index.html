@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Appointments</h1>
+      <h1 id="title">Appointments</h1>
       <form id="appointments">
         <div class="form-group">
           <label for="fullname">Enter Your Name</label>
@@ -31,12 +31,43 @@
           <label for="appendtime">When would you like to end your appointment? </label>
           <input id="appendtime" class="form-control" type="text">
         </div>
+
+        <h3>Please list symptoms</h3>
+          <div id="show-symptoms">
+            <h3 class="toggle">Here are the symptoms you listed:</h3>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="flavor" value="chocolate" checked> Head Ache
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="flavor" value="vanilla"> Fever
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="checkbox" name="flavor" value="cookiesandcream"> Bad Cramp
+            </label>
+        </div>
+
+
         <button type="submit" class="btn">Submit!</button>
+
       </form>
 
       <div class="toggle">
         <h2>Confirmation</h2>
-        <p> Hello <span class="fullname"></span>!  We are sorry to hear that your <span class="appdescription"></span> is not feeling well, we hope we can help.  Your appointment is set for <span class="appdate"></span>.  The time of your appoinment starts at <span class="appstarttime"></span>, please be 5 minutes early for paperwork to be done.  We hope we can get you out by <span class="appendtime"></span>.  Thank you for choosing us!!!</p>
+        <p> Hello <span class="fullname"></span>!  We are sorry to hear that your <span class="appdescription"></span> is not feeling well, we hope we can help.  Your appointment is set for <span class="appdate"></span>.  The time of your appoinment starts at <span class="appstarttime"></span>, please be 5 minutes early for paperwork to be done.  We hope we can get you out by <span class="appendtime"></span>.  Thank you for choosing us!!! The details to your appointment are bellow.</p>
+
+        <ul>
+          <li><span class="fullname"></span></li>
+          <li>An appointment for your <span class="appdescription"></span></li>
+          <li>Your appointment is at <span class="appstarttime"></span></li>
+        </ul>
+
+
       </div>
 
 
